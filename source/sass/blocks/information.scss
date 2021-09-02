@@ -1,0 +1,45 @@
+.information {
+  display: flex;
+  margin-left: 19.3%;
+  margin-right: 19.4%;
+  padding-bottom: 240px;
+  color: $white;
+}
+
+.information p {
+  opacity: 0.8;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.information__text {
+  margin-right: 11.8%;
+}
+
+.information h1 {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+}
+
+.information h2 {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.information form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.information input {
+  padding-top: 10px;
+  padding-bottom: 6px;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid #C9CCD4;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
