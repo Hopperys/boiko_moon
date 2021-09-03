@@ -1,8 +1,14 @@
 .page-header {
   background: url("../img/background.png") center no-repeat;
-  padding-top: 20px;
-}
 
-.page-header__logo {
-  margin-left: 19.4%;
+  @media (max-width: $tablet) {
+    background: url("../img/background_tablet.png") no-repeat;
+    background-size: contain;
+    background-position: top left;
+
+    &--nojs {
+      background-position: 0 240px;
+      background-size: contain;
+    }
+  }
 }

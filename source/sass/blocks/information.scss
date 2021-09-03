@@ -1,31 +1,72 @@
 .information {
   display: flex;
   margin-left: 19.3%;
-  margin-right: 19.4%;
-  padding-bottom: 240px;
+  margin-right: 20.7%;
+  padding-bottom: 205px;
+  letter-spacing: -0.5%;
   color: $white;
+
+  @media (min-width: 1024px) and (max-width: 1240px) {
+    padding-bottom: 145px;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    padding-bottom: 0;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .information p {
   opacity: 0.8;
   font-weight: 300;
   font-size: 20px;
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+    max-width: 435px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .information__text {
-  margin-right: 11.8%;
+  margin-right: 14.8%;
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+  }
 }
 
 .information h1 {
   font-weight: bold;
   font-size: 46px;
   line-height: 64px;
-  letter-spacing: -0.005em;
+
+  @media (max-width: $tablet) {
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 85px;
+  }
 }
 
 .information h2 {
   font-size: 17px;
   line-height: 28px;
+  font-weight: 600;
+  width: 327px;
+
+  @media (max-width: $tablet) {
+    margin: 132px auto 10px auto;
+    color: $black;
+    font-size: 18px;
+  }
+
+  @media (min-width: 980px) and (max-width: $tablet) {
+    margin-top: 150px;
+  }
 }
 
 .information form {
@@ -35,11 +76,32 @@
 }
 
 .information input {
-  padding-top: 10px;
-  padding-bottom: 6px;
   font-size: 15px;
   line-height: 24px;
-  border: 1px solid #C9CCD4;
+  border: 1px solid $grey;
   box-sizing: border-box;
   border-radius: 6px;
+  padding: 13px 0 9px 29px;
+  width: 327px;
+  margin-top: 20px;
+
+  @media (max-width: $tablet) {
+    width: 321px;
+  }
+}
+
+.information__submit {
+  background-color: $lightblue;
+  margin: 20px auto;
+  width: 326px;
+  height: 51px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  border: none;
+  border-radius: 6px;
+
+  @media (max-width: $tablet) {
+    width: 321px;
+  }
 }
