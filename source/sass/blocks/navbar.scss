@@ -71,11 +71,11 @@
     &::after {
       content: "";
       position: absolute;
-      width: 12px;
-      height: 7.5px;
+      width: 25px;
+      height: 25px;
       right: 7.81%;
       top: 23px;
-      background: url("../img/arrow.svg") no-repeat inherit;
+      background: url("../img/arrow.svg") no-repeat;
     }
   }
 }
@@ -96,6 +96,7 @@
     background-color: $link-background;
     width: 95%;
     display: inline-block;
+    vertical-align: middle;
     padding: 16px 0 16px 5%;
   }
 }

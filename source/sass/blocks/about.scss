@@ -11,6 +11,8 @@
 
   @media (max-width: $tablet) {
     margin-top: 50px;
+    font-size: 24px;
+    line-height: 41px;
   }
 }
 
@@ -32,6 +34,10 @@
   line-height: 38px;
   letter-spacing: -1.27273px;
   color: $lightblue;
+
+  @media (max-width: $mobile) {
+    margin-top: 18px;
+  }
 }
 
 .about p {
@@ -39,4 +45,8 @@
   line-height: 34px;
   letter-spacing: -0.5px;
   max-width: 263px;
+
+  @media (max-width: $mobile) {
+    font-size: 18px;
+  }
 }

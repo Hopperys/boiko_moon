@@ -15,6 +15,12 @@
   @media (max-width: $tablet) {
     padding-top: 70px;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 84px;
+  }
 }
 
 .video p {
@@ -28,6 +34,13 @@
 
   @media (max-width: $tablet) {
     margin-bottom: 136px;
+  }
+
+  @media (max-width: $mobile) {
+    width: auto;
+    margin-left: 4.68%;
+    margin-right: 4.68%;
+    margin-bottom: 98px;
   }
 }
 
@@ -46,12 +59,23 @@
     height: 90px;
     margin-bottom: 10px;
   }
+
+  @media (max-width: $mobile) {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 0;
+  }
 }
 
 .video__play svg {
   @media (max-width: $tablet) {
     width: 18px;
     height: 25px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 13px;
+    height: 18px;
   }
 }
 
@@ -66,5 +90,11 @@
     height: 282px;
     margin-top: -197px;
     margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 288px;
+    height: 162px;
+    margin-top: -113px;
   }
 }

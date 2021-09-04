@@ -10,6 +10,13 @@
   line-height: 30px;
   padding-top: 150px;
   margin-bottom: 51px;
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 41px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
 }
 
 .types h3 {
@@ -17,6 +24,11 @@
   font-size: 22px;
   line-height: 34px;
   letter-spacing: -0.5px;
+
+  @media (max-width: $mobile) {
+    font-size: 22px;
+    line-height: 34px;
+  }
 }
 
 .types ul {
@@ -31,6 +43,11 @@
 
   @media (max-width: $tablet) {
     padding-bottom: 75px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -60,6 +77,12 @@
       background-image: url("../img/ellipse_tablet.svg");
       top: 201px;
       left: -37px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &::before {
+      left: -24px;
     }
   }
 }
@@ -125,6 +148,19 @@
       left: 227px;
       top: -20px;
     }
+  }
+
+  @media (max-width: $mobile) {
+    &::before {
+      left: 217px;
+    }
+  }
+}
+
+.types li {
+  @media (max-width: $mobile) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

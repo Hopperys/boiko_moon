@@ -11,4 +11,13 @@
       background-size: contain;
     }
   }
+
+  @media (max-width: $mobile) {
+    background: url("../img/background_mobile.png") no-repeat;
+    object-fit: contain;
+
+    &--nojs {
+      background-position: 0 243px;
+    }
+  }
 }
