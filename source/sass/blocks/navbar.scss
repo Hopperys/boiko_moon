@@ -83,8 +83,17 @@
 .navbar a:not(.navbar__logo) {
   font-weight: 300;
   color: $white;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.5%;
   opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (max-width: $tablet) {
     opacity: 1;
@@ -98,6 +107,16 @@
     display: inline-block;
     vertical-align: middle;
     padding: 16px 0 16px 5%;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      color: $black;
+    }
+
+    &:active {
+      color: rgba($black, 0.5);
+    }
   }
 }
 
@@ -113,7 +132,7 @@
 .navbar--opened .navbar__logo {
   @media (max-width: $tablet) {
     margin-left: 2.73%;
-    margin-top: -245px;
+    margin-top: -215px;
   }
 }
 
@@ -163,7 +182,7 @@
     position: absolute;
     top: 0;
     right: 5px;
-    background-color: $link-background;
+    background-color: inherit;
 
     &::before,
     &::after {

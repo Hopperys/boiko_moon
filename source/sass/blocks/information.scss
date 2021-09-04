@@ -20,7 +20,7 @@
 }
 
 .information p {
-  opacity: 0.8;
+  color: rgba($white, 0.8);
   font-weight: 300;
   font-size: 20px;
 
@@ -29,11 +29,13 @@
     max-width: 435px;
     margin-left: auto;
     margin-right: auto;
+    pointer-events: none;
   }
 
   @media (max-width: $mobile) {
-    margin-left: 4.68%;
-    margin-right: 4.68%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -91,6 +93,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablet) {
+    background-color: $white;
+  }
 }
 
 .information input {

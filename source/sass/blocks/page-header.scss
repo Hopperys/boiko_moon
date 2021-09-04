@@ -1,8 +1,9 @@
 .page-header {
-  background: url("../img/background.png") center no-repeat;
+  background: url("../img/background.png") no-repeat $background-black;
+  background-size: 100% 100%;
 
   @media (max-width: $tablet) {
-    background: url("../img/background_tablet.png") no-repeat;
+    background: url("../img/background_tablet.png") no-repeat $background-black;
     background-size: contain;
     background-position: top left;
 
@@ -13,8 +14,8 @@
   }
 
   @media (max-width: $mobile) {
-    background: url("../img/background_mobile.png") no-repeat;
-    object-fit: contain;
+    background: url("../img/background_mobile.png") no-repeat $background-black;
+    background-size: 100% 50%;
 
     &--nojs {
       background-position: 0 243px;

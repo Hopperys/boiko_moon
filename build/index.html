@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Велосипеды moon</title>
+  <title>Велосипеды Moon</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
   <!-- page-header--nojs - для работы при отключенном js -->
-  <header class="page-header">
+  <header class="page-header page-header--nojs">
     <!-- navbar--nojs - при отключенном js -->
     <!-- navbar--closed - меню в закрытом состоянии -->
     <!-- navbar--opened - меню в открытом состоянии -->
-    <nav class="navbar navbar--closed">
+    <nav class="navbar navbar--closed navbar--nojs">
       <ul>
         <li>
           <a href="#about">О нас</a>
@@ -25,7 +25,7 @@
           <a href="#video">Видео про велосипеды</a>
         </li>
         <li>
-          <a href="#">Контакты</a>
+          <a href="#contacts">Контакты</a>
         </li>
       </ul>
       <a class="navbar__logo">
@@ -95,7 +95,7 @@
         </li>
       </ul>
     </section>
-    <section class="video">
+    <section class="video" id="video">
       <div class="video__wrapper">
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
@@ -113,7 +113,7 @@
     </section>
   </main>
   <footer>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт&#8209Петербург, ул. Большая Конюшенная, д. 19</p>
       <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6122840567984!2d30.3222119!3d59.9385755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2skz!4v1630651904824!5m2!1sru!2skz" width="957" height="530" allowfullscreen="" loading="lazy"></iframe>
@@ -130,5 +130,7 @@
       </div>
     </section>
   </footer>
+
+  <script src="js/script.js" type="module"></script>
 </body>
 </html>
