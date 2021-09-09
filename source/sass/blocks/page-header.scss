@@ -2,6 +2,10 @@
   background: url("../img/background.png") no-repeat $background-black;
   background-size: 100% 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background@2x.png") $background-black;
+  }
+
   @media (max-width: $tablet) {
     background: url("../img/background_tablet.png") no-repeat $background-black;
     background-size: contain;
@@ -11,14 +15,28 @@
       background-position: 0 240px;
       background-size: contain;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background_tablet@2x.png") $background-black;
+    }
   }
 
   @media (max-width: $mobile) {
     background: url("../img/background_mobile.png") no-repeat $background-black;
-    background-size: 100% 50%;
+    background-size: 100% auto;
 
     &--nojs {
       background-position: 0 243px;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background_mobile@2x.png") $background-black;
+    }
   }
+}
+
+.page-header__wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }

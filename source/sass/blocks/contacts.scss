@@ -19,12 +19,16 @@
 }
 
 .contacts p {
+  width: 555px;
+  margin: 30px auto 14px auto;
   color: rgba(0, 0, 0, 0.7);
   font-size: 17px;
   line-height: 31px;
-  width: 555px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
 
   @media (max-width: $mobile) {
     width: auto;
@@ -36,21 +40,19 @@
 .contacts__iframe {
   width: 957px;
   height: 530px;
+  margin: 26px auto 30px auto;
   border: none;
-  margin: 26px auto 39px auto;
 
   @media (max-width: $tablet) {
     width: 90.9%;
     height: 545px;
-    margin-left: 4.55%;
-    margin-right: 4.55%;
+    margin: 20px 4.55% 10px 4.55%;
   }
 
   @media (max-width: $mobile) {
     width: 100%;
-    margin: 0;
     height: 250px;
-    margin-bottom: 10px;
+    margin: 20px 0 0 0;
   }
 }
 
@@ -62,27 +64,43 @@
 }
 
 .contacts svg {
-  fill: $white;
-  margin-right: 15px;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 15px;
+  fill: $white;
 }
 
 .contacts__links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: -12px;
   margin-bottom: 98px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 52px;
+  }
 
   @media (max-width: $mobile) {
     flex-direction: column;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    text-align: center;
   }
 }
 
 .contacts__links a {
   color: rgba(0, 0, 0, 0.5);
   line-height: 22px;
+
+  &:hover,
+  &:focus {
+    color: rgba($lightblue, 1);
+  }
+
+  &:active {
+    color: $black;
+  }
 
   @media (max-width: $mobile) {
     margin-top: 22px;

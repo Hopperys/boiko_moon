@@ -7,52 +7,63 @@
 }
 
 .video h2 {
+  padding-top: 120px;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  padding-top: 120px;
 
   @media (max-width: $tablet) {
-    padding-top: 70px;
+    padding-top: 64px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 41px;
   }
 
   @media (max-width: $mobile) {
+    padding-top: 84px;
     font-size: 24px;
     line-height: 30px;
-    padding-top: 84px;
   }
 }
 
 .video p {
+  width: 340px;
+  margin: 0 auto 285px auto;
   font-weight: 300;
   line-height: 28px;
-  margin-bottom: 285px;
   opacity: 0.7;
-  width: 340px;
-  margin-left: auto;
-  margin-right: auto;
 
   @media (max-width: $tablet) {
+    width: 55.85%;
     margin-bottom: 136px;
   }
 
   @media (max-width: $mobile) {
     width: auto;
-    margin-left: 4.68%;
-    margin-right: 4.68%;
-    margin-bottom: 98px;
+    margin: 20px 4.68% 100px 4.68%;
   }
 }
 
 .video__play {
-  margin-bottom: 130px;
   width: 65px;
   height: 65px;
+  margin-bottom: 130px;
   border-radius: 50%;
   background-color: $lightblue;
   border: none;
   z-index: 1;
   position: relative;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $grey;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet) {
     width: 90px;
@@ -82,19 +93,20 @@
 .video__player img {
   width: 929px;
   height: 522px;
-  margin: -424px -50% 150px 50%;
+  margin: -424px -50% 116px 50%;
   transform: translateX(-50%);
 
   @media (max-width: $tablet) {
     width: 503px;
     height: 282px;
     margin-top: -197px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile) {
     width: 288px;
     height: 162px;
     margin-top: -113px;
+    margin-bottom: 45px;
   }
 }

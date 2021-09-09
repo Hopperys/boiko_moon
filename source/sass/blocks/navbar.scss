@@ -1,6 +1,11 @@
 .navbar {
   display: flex;
   flex-direction: column;
+  margin-left: 12px;
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+  }
 }
 
 .navbar ul {
@@ -9,10 +14,8 @@
   width: 873px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  transform: translateX(-50%);
-  margin: 0 -50% 212px 50%;
-  padding-top: 20px;
+  margin: 0 auto 264px auto;
+  padding: 20px 0 0 20px;
   position: relative;
 
   &::after {
@@ -28,6 +31,7 @@
 
   @media (max-width: $tablet) {
     display: none;
+    padding: 0;
   }
 }
 
@@ -80,6 +84,14 @@
   }
 }
 
+.navbar li:not(:last-of-type) {
+  margin-right: 135px;
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+  }
+}
+
 .navbar a:not(.navbar__logo) {
   font-weight: 300;
   color: $white;
@@ -96,6 +108,10 @@
   }
 
   @media (max-width: $tablet) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 95%;
+    padding: 16px 0 16px 5%;
     opacity: 1;
     color: $link-tablet;
     font-weight: 400;
@@ -103,10 +119,6 @@
     font-size: 20px;
     line-height: 28px;
     background-color: $link-background;
-    width: 95%;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 16px 0 16px 5%;
 
     &:hover,
     &:focus {
@@ -121,11 +133,15 @@
 }
 
 .navbar__logo {
-  margin-left: 19.4%;
+  margin-left: 18.8%;
 
   @media (max-width: $tablet) {
     margin-left: 2.73%;
     margin-top: 25px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 5%;
   }
 }
 
@@ -141,11 +157,11 @@
 
   @media (max-width: $tablet) {
     display: block;
+    width: 50px;
+    height: 50px;
     background-color: $lightblue;
     border: none;
     outline: none;
-    width: 50px;
-    height: 50px;
     position: absolute;
     right: 0;
     top: 0;
