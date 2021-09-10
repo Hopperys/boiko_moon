@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
-    <!-- page-header--nojs при отключенном js -->
+    <!-- nojs при отключенном js -->
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
-        <!-- navbar--nojs при отключенном, navbar--closed - меню в закрытом состоянии, navbar--opened - меню в открытом состоянии -->
+        <!-- nojs при отключенном, closed - меню в закрытом состоянии, opened - меню в открытом состоянии -->
         <nav class="navbar navbar--closed navbar--nojs">
           <ul>
             <li>
@@ -51,7 +51,7 @@
               <input type="text" placeholder="Введите Ваше Имя" name="name" id="name" required>
             </label>
             <label>
-              <input type="tel" placeholder="Введите Ваш номер телефона" name="phone" id="phone" required>
+              <input type="tel" placeholder="Введите Ваш номер телефона" name="phone" id="phone" pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="20" required>
             </label>
             <button class="information__submit" type="submit">Подобрать велосипед мечты</button>
           </form>
