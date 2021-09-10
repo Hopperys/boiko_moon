@@ -8,8 +8,10 @@
       evt.preventDefault();
       var blockId = evt.target.getAttribute('href');
 
-      if (document.contains(document.querySelector(blockId))) {
-        document.querySelector(blockId).scrollIntoView({
+      var targetBlock = document.querySelector(blockId);
+
+      if (document.contains(targetBlock)) {
+        targetBlock.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });

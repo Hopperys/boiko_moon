@@ -1,10 +1,6 @@
 .page-header {
   background: url("../img/background.png") no-repeat $background-black;
-  background-size: 1440px 100%;
-  background-position: center;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background@2x.png") $background-black;
