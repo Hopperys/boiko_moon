@@ -39,6 +39,7 @@
   font-size: 22px;
   line-height: 34px;
   letter-spacing: -0.5px;
+  max-width: 342px;
 
   @media (max-width: $mobile) {
     font-size: 22px;
@@ -56,6 +57,16 @@
   margin-left: 10.9%;
   margin-right: 10.9%;
 
+  @media (max-width: 1370px) {
+    margin-left: 5.2%;
+    margin-right: 5.2%;
+  }
+
+  @media (max-width: 1196px) {
+    margin-left: 5.3%;
+    margin-right: 5.3%;
+  }
+
   @media (max-width: $tablet) {
     padding-bottom: 24px;
     margin-left: 11.4%;
@@ -66,6 +77,10 @@
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 15px;
+  }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
   }
 }
 
@@ -131,6 +146,14 @@
     bottom: 54px;
   }
 
+  @media (max-width: 1196px) {
+    &::after {
+      width: 47px;
+      height: 47px;
+      left: 260px;
+    }
+  }
+
   @media (max-width: $tablet) {
     margin-top: 0;
 
@@ -153,6 +176,16 @@
     background-repeat: no-repeat;
     left: 283px;
     top: -35px;
+  }
+
+  @media (max-width: 1196px) {
+    &::before {
+      width: 68px;
+      height: 68px;
+      background-image: url("../img/circle_tablet.svg");
+      left: 247px;
+      top: -25px;
+    }
   }
 
   @media (max-width: $tablet) {
@@ -187,10 +220,14 @@
 
 
 .types img {
+  @media (max-width: 1196px) {
+    width: 290px;
+    height: auto;
+  }
+
   @media (max-width: $tablet) {
     width: 270px;
     height: 300px;
     border-radius: 10px;
-    object-fit: cover;
   }
 }

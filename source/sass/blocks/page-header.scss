@@ -1,6 +1,7 @@
 .page-header {
   background: url("../img/background.png") no-repeat $background-black;
   background-size: cover;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background@2x.png") $background-black;

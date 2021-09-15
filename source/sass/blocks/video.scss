@@ -104,9 +104,15 @@
   }
 
   @media (max-width: $mobile) {
-    width: 288px;
-    height: 162px;
-    margin-top: -113px;
-    margin-bottom: 45px;
+    width: 503px;
+    height: 282px;
+    margin: -133px -50% 45px 50%;
+  }
+
+  @media (max-width: 558px) {
+    width: 90%;
+    height: auto;
+    margin: -113px 5% 45px 5%;
+    transform: translateX(0);
   }
 }

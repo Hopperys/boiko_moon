@@ -12,10 +12,13 @@
   @include list-reset;
 
   width: 873px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
+  justify-content: space-around;
+  column-gap: 60px;
+  grid-template-columns: auto auto auto auto;
   margin: 0 auto 264px auto;
-  padding: 20px 0 0 20px;
+  padding: 20px 0 0 0;
   position: relative;
 
   &::after {
@@ -52,11 +55,17 @@
 
 .navbar--opened ul {
   @media (max-width: $tablet) {
+    position: fixed;
+    z-index: 10;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    justify-content: flex-start;
     width: 100%;
-    padding-top: 0;
+    height: 100vh;
+    padding-top: 20px;
     margin: 0;
+    background-color: $white;
     transform: translate(0);
   }
 }
@@ -71,6 +80,7 @@
   @media (max-width: $tablet) {
     height: 60px;
     position: relative;
+    margin-top: 30px;
 
     &::after {
       content: "";
@@ -84,11 +94,11 @@
   }
 }
 
-.navbar li:not(:last-of-type) {
-  margin-right: 135px;
+.navbar li:nth-of-type(4n-3) {
+  margin-left: -20px;
 
   @media (max-width: $tablet) {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -196,6 +206,7 @@
 .navbar--nojs .navbar__burger {
   @media (max-width: $tablet) {
     position: absolute;
+    z-index: 11;
     top: 0;
     right: 5px;
     background-color: inherit;

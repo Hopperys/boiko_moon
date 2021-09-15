@@ -66,13 +66,22 @@
   line-height: 34px;
   letter-spacing: -0.5px;
 
+  @media (min-width: 987px) and (max-width: 1023px) {
+    max-width: 275px;
+  }
+
   @media (max-width: $tablet) {
     margin-bottom: 31px;
+    max-width: 263px;
   }
 
   @media (max-width: $mobile) {
     font-size: 18px;
     margin-top: 11px;
     margin-bottom: 26px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1224px) {
+    max-width: 213px;
   }
 }

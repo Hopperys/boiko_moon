@@ -75,13 +75,18 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-left: -12px;
-  margin-bottom: 98px;
+  margin-bottom: 88px;
 
   @media (max-width: $tablet) {
+    width: 100%;
     margin-bottom: 52px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
   }
 
   @media (max-width: $mobile) {
+    display: flex;
     flex-direction: column;
     margin-bottom: 50px;
     margin-left: 0;
@@ -92,6 +97,8 @@
 .contacts__links a {
   color: rgba(0, 0, 0, 0.5);
   line-height: 22px;
+
+  margin-bottom: 10px;
 
   &:hover,
   &:focus {
@@ -104,13 +111,38 @@
 
   @media (max-width: $mobile) {
     margin-top: 22px;
+    margin-bottom: 0;
   }
 }
 
 .contacts__links a:not(:last-of-type) {
   margin-right: 90px;
 
+  @media (max-width: $tablet) {
+    margin-right: 0;
+  }
+
   @media (max-width: $mobile) {
     margin-right: 0;
+  }
+}
+
+.contacts__links a:nth-of-type(2n-1) {
+  @media (max-width: $tablet) {
+    margin-left: 20px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+  }
+}
+
+.contacts__links a:nth-of-type(2n) {
+  @media (max-width: $tablet) {
+    margin-left: -4px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
   }
 }
