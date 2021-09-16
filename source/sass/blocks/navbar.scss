@@ -63,10 +63,15 @@
     justify-content: flex-start;
     width: 100%;
     height: 100vh;
-    padding-top: 20px;
+    padding-top: 70px;
     margin: 0;
     background-color: $white;
     transform: translate(0);
+  }
+
+  @media (max-width: $mobile) {
+    height: 100%;
+    overflow-x: hidden;
   }
 }
 

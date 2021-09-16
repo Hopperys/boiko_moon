@@ -35,11 +35,16 @@
 
 .types h3 {
   margin-top: 8px;
+  margin-left: 25px;
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;
   letter-spacing: -0.5px;
   max-width: 342px;
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+  }
 
   @media (max-width: $mobile) {
     font-size: 22px;
@@ -49,13 +54,13 @@
 
 .types ul {
   @include list-reset;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   flex-wrap: wrap;
-  justify-content: space-between;
   text-align: center;
   padding-bottom: 125px;
-  margin-left: 10.9%;
-  margin-right: 10.9%;
+  margin-left: 9.1%;
+  margin-right: 9.1%;
 
   @media (max-width: 1370px) {
     margin-left: 5.2%;
@@ -68,19 +73,18 @@
   }
 
   @media (max-width: $tablet) {
+    display: flex;
+    width: 592px;
+    justify-content: center;
     padding-bottom: 24px;
-    margin-left: 11.4%;
-    margin-right: 11.4%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (max-width: $mobile) {
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 15px;
-  }
-
-  @media (max-width: 650px) {
+    width: 320px;
     flex-direction: column;
+    padding-bottom: 15px;
   }
 }
 
@@ -96,7 +100,7 @@
     height: 180px;
     background-image: url("../img/ellipse.svg");
     background-repeat: no-repeat;
-    left: -60px;
+    left: -34px;
     top: 154px;
     z-index: -1;
   }
@@ -131,7 +135,7 @@
     height: 47px;
     background-image: url("../img/square.svg");
     background-repeat: no-repeat;
-    left: -19px;
+    left: 5px;
     top: -21px;
   }
 
@@ -142,7 +146,7 @@
     height: 47px;
     background-image: url("../img/square.svg");
     background-repeat: no-repeat;
-    left: 318px;
+    left: 344px;
     bottom: 54px;
   }
 
@@ -174,7 +178,7 @@
     height: 95px;
     background-image: url("../img/circle.svg");
     background-repeat: no-repeat;
-    left: 283px;
+    left: 310px;
     top: -35px;
   }
 
@@ -189,9 +193,6 @@
   }
 
   @media (max-width: $tablet) {
-    margin-left: auto;
-    margin-right: auto;
-
     &::before {
       width: 68px;
       height: 68px;
@@ -205,6 +206,17 @@
     &::before {
       left: 217px;
     }
+  }
+}
+
+.types li:nth-of-type(2n) {
+  @media (max-width: $tablet) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
