@@ -1,5 +1,10 @@
 .contacts {
   text-align: center;
+  padding-left: 7px;
+
+  @media (max-width: $tablet) {
+    padding-left: 0;
+  }
 }
 
 .contacts h2 {

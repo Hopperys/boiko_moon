@@ -6,6 +6,7 @@
     var navbar = document.querySelector('.navbar');
     var header = document.querySelector('.page-header');
     var burger = navbar.querySelector('.navbar__burger');
+    var body = document.querySelector('.page-body');
 
     navbarList.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -30,9 +31,11 @@
       if (navbar.classList.contains('navbar--closed')) {
         navbar.classList.remove('navbar--closed');
         navbar.classList.add('navbar--opened');
+        body.classList.add('page-body--menu');
       } else {
         navbar.classList.add('navbar--closed');
         navbar.classList.remove('navbar--opened');
+        body.classList.remove('page-body--menu');
       }
     });
   }
