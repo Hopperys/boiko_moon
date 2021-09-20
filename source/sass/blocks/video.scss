@@ -46,7 +46,7 @@
 
   @media (max-width: $mobile) {
     width: auto;
-    margin: 20px 4.68% 130px 4.68%;
+    margin: 20px 4.68% 150px 4.68%;
   }
 
   @media (max-width: 558px) {
@@ -119,21 +119,29 @@
   @media (max-width: $mobile) {
     width: 503px;
     height: 282px;
-    margin: -153px -50% 45px 50%;
+    margin: -173px -50% 45px 50%;
   }
 
   @media (max-width: 558px) {
     width: 90%;
     height: auto;
-    margin: -143px 5% 45px 5%;
+    margin: -173px 5% 45px 5%;
     transform: translateX(0);
   }
 
-  @media (max-width: 503px) {
-    margin-top: -133px;
+  @media (max-width: 526px) {
+    margin-top: -163px;
   }
 
-  @media (max-width: 400px) {
-    margin-top: -113px;
+  @media (max-width: 465px) {
+    margin-top: -148px;
+  }
+
+  @media (max-width: 410px) {
+    margin-top: -135px;
+  }
+
+  @media (max-width: 340px) {
+    margin-top: -114px;
   }
 }
